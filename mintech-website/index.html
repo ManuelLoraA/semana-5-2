@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mintech</title>
+		    <!-- Links de Bootstrap y css -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+				<!-- Slick Slider Style -->
+	<link rel="stylesheet" type="text/css" href="js/plugins/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/slick/slick.css">
+        <!-- Slick Slider Ends -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <!-- Image Hover -->
+  <link rel="stylesheet" href="js/plugins/imagehover/css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+     <style>
+    body, html, .main {
+        height: 100%;
+    }
+
+    section {
+        min-height: 100%;
+    }
+    </style>
+</head>
+<body>
+ <div id="start" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navfont2"><p><i class="fa fa-phone-square" aria-hidden="true"></i>
+ +1 809 974 7826</p></li>
+        <li class="navfont2"><p><i class="fa fa-envelope" aria-hidden="true"></i> orestes@mintech.do</p></li>
+      </ul>
+    </div>
+    <hr>
+					<!-- navbar start -->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#start"><img style="width: 175px;" src="images/mintech.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navfont"><a href="#start">Inicio</a></li>
+        <li class="navfont"><a href="#quienessomos">Nosotros</a></li>
+        <li class="navfont"><a href="#facilidades">Facilidades</a></li>
+        <li class="navfont"><a href="#proyectos">Proyectos</a></li>
+        <li class="navfont"><a href="#team">Equipo</a></li>
+        <li class="navfont"><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+					<!-- navbar end -->
+  <div class="intro-slider col-xs-12">
+    <div><img src="images/slide1.png"></div>
+    <div><img src="images/slide1.png"></div>
+    <div><img src="images/slide1.png"></div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <h1 id="title1">¿QUÉ HACEMOS?</h1><br>
+      <p id="description">Somos una empresa con experiencia. Entendemos tus necesidades exactas y ofrecemos un servicio personalizado, que te brindará la solución que necesitas.</p>
+    </div>
+    
+    <div class="button">
+      <a class="btn btn-large" href="#quienessomos">LEER MÁS</a>
+    </div>
+
+
+  
+    <div class="h2" id="quienessomos">
+        <h2>QUIÉNES SOMOS</h2>
+    </div>
+
+    <div class="line"></div>
+
+      <p class="ustext">Mintech SRL nace en el 2014 como una empresa dedicada a la obtención de concesiones mineras,
+      la exploración, desarrollo y explotación de estas en la República Dominicana. Adicionalmente a 
+      dar servicios de asesoría técnica metalúrgica y de logística en el desarrollo de proyectos, tanto 
+      nacionales  como internacionales. MINTECH SRL ha participado en la elaboración de importantes 
+      estudios de factibilidad de proyectos en el país y el extranjero.
+      </p>
+  
+  </div>
+
+    <div class="container-fluid quote">
+      <div class="container">
+      <p class="quotetext">Somos un equipo con experiencia<br>
+      que conoce tus necesidades</p>
+      <img class="quoteimg" src="images/quoteicon.png">
+      </div>
+    </div>
+
+    <div class="container-fluid facilities">
+      <div class="container">
+        <h2 id="facilidades" class="repair">FACILIDADES</h2>
+        <div class="line"></div>
+        
+        <div class="col-md-4 fac">
+          <img class="facimg" src="images/facilidad1.png">
+          <h3 class="factitle">Suministro de Materiales</h3>
+          <p class="factext">Tenemos años de experiencia en el suministro
+          de materiales industriales.</p>
+          <a class="btn btn-large modalbtn" data-toggle="modal" data-target=".bd-example-modal-lg">APRENDE MAS</a>
+        </div>
+        
+        <div class="col-md-4 fac">
+          <img class="facimg" src="images/facilidad2.png">
+          <h3 class="factitle">Flexibilidad Financiera</h3>
+          <p class="factext">Nos ajustamos a tu presupuesto. Contáctanos
+          para más información.</p>
+          <a class="btn btn-large modalbtn" data-toggle="modal" data-target=".bd-example-modal-lg">APRENDE MAS</a>
+        </div>
+        
+        <div class="col-md-4 fac">
+          <img class="facimg" src="images/facilidad3.png">
+          <h3 class="factitle">Experiencia Internacional</h3>
+          <p class="factext">Con un portafolio de proyectos al rededor
+          del mundo, te brindaremos lo mejor.</p>
+          <a class="btn btn-large modalbtn" data-toggle="modal" data-target=".bd-example-modal-lg">APRENDE MAS</a>
+        </div>
+      
+      </div>
+    </div>
+      
+    <div class="container-fluid projects">
+      <div class="container">
+          <h2 id="proyectos" class="repair2">PROYECTOS</h2>
+          <div class="line2"></div>
+          <div class="responsive col-xs-12">
+            <div>
+              <figure class="imghvr-fade">
+                <img src="images/slide2.png">
+                <figcaption>
+                  <h3 class="protitle">Evaluación Técnica</h3>
+                  <p class="protext">De planta de Ferroniquel en Grecia</p>
+                  <a class="pro-hover" href="http://www.freepik.com" target="_blank">Designed by snowing / Freepik</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="imghvr-fade">
+                  <img src="images/slide2-2.png">
+                  <figcaption>
+                    <h3 class="protitle">Evaluación de Planta</h3>
+                    <p class="protext">Evaluación de planta de producción de Niquel y Cobalto
+                    por un cliente interesado en invertir.</p>
+                    <a class="pro-hover" href="http://www.freepik.com" target="_blank">Designed by snowing / Freepik</a>
+                  </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="imghvr-fade">
+                  <img src="images/slide2-3.png">
+                  <figcaption>
+                    <h3 class="protitle">Evaluación de Alternativas</h3>
+                    <p class="protext">Evaluación de alternativas de procesamiento de Niquel
+                    y Cobalto en Canadá.</p>
+                    <a class="pro-hover" href="http://www.freepik.com" target="_blank">Designed by snowing / Freepik</a>
+                  </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="imghvr-fade">
+                <img src="images/slide2-4.png">
+                <figcaption>
+                  <h3 class="protitle">Evaluación de Viabilidad Técnica</h3>
+                  <p class="protext">Evaluación de viabilidad técnica de proyecto para producir ferroniquel
+                  en Cuba, desde la perspectiva del promotor y del operador del proyecto. (Dos veces por separado)
+                  </p>
+                   <a class="pro-hover" href="http://www.freepik.com" target="_blank">Designed by snowing / Freepik</a>
+                </figcaption>
+              </figure>
+            </div>
+             <div>
+              <figure class="imghvr-fade">
+                <img src="images/slide2-5.png">
+                <figcaption>
+                  <h3 class="protitle">Evaluación Técnica Pre-eliminar</h3>
+                  <p class="protext">Evaluación técnica pre-eliminar para el desarrollo de mina y
+                  planta de procesamiento de yodo en Chile.
+                  </p>
+                   <a class="pro-hover" href="http://www.freepik.com" target="_blank">Designed by snowing / Freepik</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container team">
+      <h2 id="team" class="repair">CONOCE NUESTRO EQUIPO</h2>
+      <div class="line"></div>
+      <div class="col-md-4">
+        <div>
+          <img class="teamimg" src="images/gerente.png">
+          <h3 class="teamtitle">Orestes Trifilio</h3>
+          <p class="teamtext">Lorem ipsum sit amet<br>lorem ipsum sit amet sit<br>amet lorem ipsum or<br>whatever you want</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <img class="teamimg" src="images/ventas.png">
+          <h3 class="teamtitle">José F. Aponte</h3>
+          <p class="teamtext">Lorem ipsum sit amet<br>lorem ipsum sit amet sit<br>amet lorem ipsum or<br>whatever you want</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <img class="teamimg" src="images/admin.png">
+          <h3 class="teamtitle">Zoa Ruora Torres</h3>
+          <p class="teamtext">Lorem ipsum sit amet<br>lorem ipsum sit amet sit<br>amet lorem ipsum or<br>whatever you want</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid contact">
+      <div class="container">
+          <h2 id="contacto" class="repair3">CONTÁCTANOS</h2>
+          <div class="line2"></div>
+          <img class="contimg" src="images/contactimg.png">
+          <div>
+            <div class="col-md-4 allcontacts">
+              <h3 class="contitle">LLÁMANOS</h3>
+              <p class="context">Comúnicate con un represen-<br>tante de nuesto equipo, y cuén-<br>tanos sobre tu proyecto.</p><br>
+              <h4 class="contitle">Orestes Trifilio</h4>
+              <p><i class="fa fa-phone" aria-hidden="true"></i>
+               +1 809 974 7826<br>
+               <i class="fa fa-envelope" aria-hidden="true"></i> orestes@mintech.do</p>
+               <h4 class="contitle">José F. Aponte</h4>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> +1 809 505 2493<br>
+              <i class="fa fa-envelope" aria-hidden="true"></i> franklin@mintech.do</p>
+               <h4 class="contitle">Zoa Roura Torres</h4>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> +1 829 323 6587<br>
+              <i class="fa fa-envelope" aria-hidden="true"></i> zoa@mintech.do</p>
+            </div>
+          <div class="col-md-8 row">
+            <form>
+              <div class="form-group">
+                <div class="col-md-6 secondg">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Nombre*">
+                </div>
+                 <div class="col-md-6 secondg">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Correo*">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-6 secondg">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Teléfono">
+                </div>
+                 <div class="col-md-6 secondg">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Asunto*">
+                </div>
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="" class="form-control message" id="inputEmail3">
+                </div>
+                <div class="col-md-12 send">
+                   <a class="btn2 btn-large" href="#">ENVIAR</a>
+                </div>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="col-md-6">
+          <h3 class="footertitle">SOBRE NOSOTROS</h3>
+          <div class="line2"></div>
+          <img class="footerimg" src="images/mintech.png">
+          <p class="footertext">Mintech SRL nace en el 2014 como una empresa dedicada a la obtención de concesiones mineras, la exploración, desarrollo y explotación de estas en la República Dominicana.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="footertitle">CONTÁCTANOS</h3>
+          <div class="line2"></div>
+          <p class="footertext"><span>Telefóno:</span> +1 809 974 7826
+          <br><span>Correo:</span> orestes@mintech.do</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid footer2">
+      <div class="container">
+        <p class="footer2text">2017 All Rights Reserved Designed by <a class="mctekk" href="https://mctekk.com/" target="_blank">mctekk</a></p>
+      </div>
+    </div>
+    <!-- /.footer -->
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xuzKGHzzcDA" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<!-- /.Modal -->
+
+    <!-- Smooth Scroll -->
+    <script type="text/javascript">
+    window.scroll({
+     behavior: 'smooth' 
+      }); 
+    </script>
+		
+    <!-- Scripts principales Bootstrap y JS -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+					<!-- Slick Slider js -->
+	<script type="text/javascript" src="js/plugins/slick/slick.js"></script>
+	
+   <script type="text/javascript">
+      $(document).ready(function(){
+          $('.intro-slider').slick({
+              dots: false,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              infinite: true,
+              slidesToShow: 1,
+              adaptiveHeight: false
+          });
+
+          $('.responsive').slick({
+              dots: false,
+              infinite: true,
+              speed: 300,
+              arrows: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+          });
+      });
+    </script>
+</body>
+</html>
